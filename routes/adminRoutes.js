@@ -15,7 +15,7 @@ import {
 } from "../controllers/adminController.js";
 import { authAdmin, authSuperAdmin } from "../middleware/auth.js";
 import {
-  // claimAllWinnings,
+  claimAllWinnings,
   getAdminGameResultsForAdmin,
   getTotalWinnings,
 } from "../controllers/cardController.js";
@@ -43,6 +43,6 @@ router.get("/search-result", searchAll);
 router.get("/total-winnings/:adminId", authAdmin, getTotalWinnings);
 
 // Claim all winnings for an admin
-// router.post("/claim-all/:adminId", authAdmin, claimAllWinnings);
+router.post("/claim-all/:adminId", authAdmin, claimAllWinnings);
 
 export default router;
