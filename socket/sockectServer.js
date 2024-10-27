@@ -164,7 +164,7 @@ let timer = {
     isRunning: false
 };
 // Increased the calculation start time to ensure results arrive before last 5 seconds
-const CALCULATION_START_TIME = 10; // Increased from 9 to 15 seconds
+const CALCULATION_START_TIME = 10 // Increased from 9 to 15 seconds
 const RESULT_DEADLINE = 5; // Results must be ready by this many seconds before end
 let timerInterval;
 let calculationPromise = null; // To store ongoing calculation
